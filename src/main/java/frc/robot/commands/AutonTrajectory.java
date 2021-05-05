@@ -37,8 +37,8 @@ public class AutonTrajectory extends SequentialCommandGroup {
     drivetrain.invertPathDirection(true);
 
     Trajectory trajectory = TrajectoryGenerator.generateTrajectory(List.of(
-      new Pose2d(),
-      new Pose2d(-2.05, -.2, new Rotation2d(.4,.161))
+      new Pose2d(0, 0, new Rotation2d(3.048, 0)),
+      new Pose2d(5, -1, new Rotation2d(0, -3.048))
     ), drivetrain.getTrajectoryConfig());
 
     

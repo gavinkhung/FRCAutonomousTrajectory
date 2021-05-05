@@ -123,6 +123,9 @@ public class Drivetrain extends SubsystemBase {
 	public void periodic() {
 		driveOdometry.update(getHeading(), getLeftDistance(), getRightDistance());
 		pose = driveOdometry.getPoseMeters();
+
+		System.out.println("leftMaster: "+leftMaster.getMotorOutputPercent());
+		System.out.println("rightMaster: "+rightMaster.getMotorOutputPercent());
 	}
 
 	public void resetOdometry() {
