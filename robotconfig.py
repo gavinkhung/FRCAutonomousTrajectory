@@ -9,8 +9,8 @@
     "gearing": 11.244,
     "encoderPorts": [2, 1],
     "rightEncoderPorts": [3, 5],
-    "encoderInverted": False,
-    "rightEncoderInverted": False,
+    "encoderInverted": [False, False],
+    "rightEncoderInverted": [False, False],
     "gyroType": "NavX",
     "gyroPort": "SPI.Port.kMXP"
 }
